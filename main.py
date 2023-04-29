@@ -1,3 +1,5 @@
+# This code is licensed under the MIT License.
+
 from src.fetch import Scraper
 import sys
 import os
