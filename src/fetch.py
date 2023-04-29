@@ -35,12 +35,12 @@ class Scraper:
         for link in self.soup.find_all('a'):
             href = link.get('href')
             title = link.get('title')
-            if index_X > 12:
+            if index_X > 11:
                 self.titles.append(title)
             if pattern and pattern in href:
                 self.links.append(href)
             index_X += 1
-        for _ in range(11):
+        for _ in range(12):
             self.titles.pop()
 
     def download_pdfs(self, option: int) -> None:
@@ -89,4 +89,4 @@ class Scraper:
 if __name__ == "__main__":
     scrape = Scraper()
     scrape.lookup_links("photo")
-    scrape.download_pdfs(2)
+    print(scrape.titles)
