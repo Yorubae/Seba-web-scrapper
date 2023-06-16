@@ -1,5 +1,4 @@
-# Doesn't work anymore!
-# SEBA PDF Scraper
+# SEBA PDF Scraper [Deprecated]
 
 This is a Python tool to scrape the SEBA website for PDF files.
 
